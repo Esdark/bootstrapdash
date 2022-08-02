@@ -1,0 +1,35 @@
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body {
+    background-color: $bg-color;
+    position: relative;
+    width: 1728px;
+    height: 1228px;
+
+}
+
+.custom_block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 24px;
+    gap: 10px;
+
+    position: absolute;
+    width: 176px;
+    height: 44px;
+    left: 1079px;
+    top: 30px;
+
+    background: #33297C;
+    border-radius: 6px;
+}

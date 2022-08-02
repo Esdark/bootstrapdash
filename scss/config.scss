@@ -1,0 +1,16 @@
+$bg-color: #ECEEF3;
+$f-color: #33297f;
+$s-color: #222222;
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+      @return #222;
+    } @else {
+      @return #fff;
+    }
+  }
+  
+  // Set background & text color
+  @mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color)
+  }
