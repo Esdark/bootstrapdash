@@ -1,35 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap');
 @import 'config';
-@import 'utilities';
-@import 'buttons';
 
-* {
-    box-sizing: border-box;
+
+*{
     margin: 0%;
     padding: 0%;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 
-body {
-    background-color: $bg-color;
-    position: relative;
-    width: 1728px;
-    height: 1228px;
-
+.container{
+    display: grid;
+    width: 96%;
+    margin: a auto;
+    gap: 1.8rem;
+    grid-template-columns: 5rem auto 23rem;
 }
 
-.custom_block {
+aside{
+    background-color: white;
+    height: 100vh;
+   
+    align-items: center;
+}
+
+aside .top{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px 24px;
-    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
 
-    position: absolute;
-    width: 176px;
-    height: 44px;
-    left: 1079px;
-    top: 30px;
+aside .logo img{
+    margin-left: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+}
 
+/* sidebar */
+
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.2rem;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+
+}
+
+aside .sidebar img{
+    width: 2rem;
+    height: 2rem;
+}
+
+aside .sidebar a{
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar img{
+    transition: all 300ms ease;
+}
+
+aside .sidebar a.active{
+    margin-left: 0%;
+    color: #33297C;
+}
+
+aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 100%;
     background: #33297C;
-    border-radius: 6px;
+}
+
+aside .sidebar a:hover img{
+    margin-left: 1rem;
+}
+
+/*   main    */
+
+main{
+    margin-top: 1.4rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.welcome{
+    display: inline-block;
+    color: #949494;
+    padding: 0.2rem 0.5rem;
+    font-weight: 800;
+    font-size: 0.4rem;
+}
+
+.statq{
+    margin-top: 1.8rem;
+    font-weight: 800;
+}
+
+main .stats{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+}
+main .stats > div {
+    background: white;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+}
+
+
+main .stats > div h3{
+    padding: 0.2rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+main .stats > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .stats h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+main .stats .progress{
+    display: flex;
+}
+
+main .stats .progress .blue{
+    color: #248AFD;
+    display: flex;
+    gap: 1rem;
+    margin-top: 3.5rem;
+}
+
+
+main .stats .progress .red{
+    color: #F95F53;
+    display: flex;
+    gap: 1rem;
+    margin-top: 3.5rem;
+}
+main .stats .progress .blue p{
+    color: #248AFD;
+}
+main .stats .progress .red p{
+    color: #F95F53;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.right{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    top: 3rem;
+}
+
+    
+.search {
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    gap: 3rem;
+}
+
+.input button {
+    height: 5rem;
+    border: 0;
+    color: #2f2f2f;
+    font-size: 1.8rem;
+}
+
+input[type="search"] {
+    width: 100%;
+    background: #fff;
+    padding: 0 1.6rem;
+    border-radius: .7rem;
+    transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+}
+
+.search button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6rem;
+    font-weight: bold;
+    background: #33297C;
+    border-radius: 0 .7rem .7rem 0;
+}
+
+
+
+
+
+
+.copy{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.copybtn{
+    width: 2rem;
+    height: 2rem;
 }
