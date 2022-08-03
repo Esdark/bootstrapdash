@@ -288,10 +288,12 @@ main .stats .progress .red p{
     height: 15rem;
 }
 .project-status{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 10px;
+    border-radius: 1.5rem;
 }
 
 
@@ -312,17 +314,18 @@ main .stats .progress .red p{
 }
 
 .project-status .edepartment{
+    width:100%;
     background-color: white;
     border-radius: 1.5rem;
     margin-top: 2rem;
-    
+    position: relative;
 }
 
 .edepartment h2{
     font-weight: 800;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 
@@ -334,6 +337,13 @@ main .stats .progress .red p{
 
 .chatlable{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 2em;
+}
+
+.chatlable h1{
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 
 
@@ -610,7 +620,15 @@ input[type="search"] {
 
 
 
-
+.dfooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: gray;
+    text-align: center;
+  }
 
 
 
