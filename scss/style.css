@@ -90,13 +90,13 @@ p {
   width: 100%;
   margin: a auto;
   gap: 1.8rem;
-  grid-template-columns: 5rem auto 22rem;
+  grid-template-columns: 6rem auto 24rem;
 }
 
 aside {
   background-color: white;
-  height: 100vh;
-  margin-left: 0.7rem;
+  height: 100%;
+  margin-left: 2rem;
   align-items: center;
 }
 
@@ -251,7 +251,7 @@ main .stats .progress .red p {
   display: block;
   background-color: white;
   margin-top: 2rem;
-  padding: 10px;
+  padding: 30px;
   border-radius: 20px;
 }
 
@@ -323,7 +323,7 @@ main .stats .progress .red p {
   align-items: center;
   font-size: 0.6rem;
   font-weight: 600;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .bar {
@@ -357,7 +357,7 @@ main .stats .progress .red p {
 }
 
 #myChart {
-  padding: 20px;
+  padding: 5px;
   margin: 0rem;
 }
 
