@@ -219,7 +219,7 @@
                             const myChart = new Chart(ctx, {
                                 type: 'doughnut',
                                 data: {
-                                    labels: ['Red', 'Blue', 'Yellow'],
+                                    labels: ['Marketing', 'Developing', 'Designing'],
                                     datasets: [{
                                         label: '',
                                         data: [120, 120, 120],
@@ -239,6 +239,38 @@
             </div>
 
             <div class="project-status">
+                <div class="edepartment">
+                    <h2>Employees by Department</h2>
+                    <div class="chart2">
+                        <canvas id="myChart3" width="50" height="50"></canvas>
+                        <script>
+                            const ctx3 = document.getElementById('myChart3').getContext('2d');
+                            const myChart3 = new Chart(ctx3, {
+                                type: 'doughnut',
+                                data: {
+                                    
+                                    datasets: [{
+                                        label: '',
+                                        data: [120, 120, 30, 90],
+                                        backgroundColor: [
+                                            '#248AFD',
+                                            '#4B49AC',
+                                            '#FFC100'
+                                        ],
+
+                                    }]
+                                },
+
+                            });
+                        </script>
+                        <div class="chatlable">
+                            <h1>50</h1>
+                            <h1>60</h1>
+                            <h1>50</h1>
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                </div>
                 <div class="chart">
                     <canvas id="myChart2" width="50" height="25"></canvas>
                     <script>

@@ -287,7 +287,12 @@ main .stats .progress .red p{
     width: 15rem;
     height: 15rem;
 }
-
+.project-status{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
@@ -306,10 +311,30 @@ main .stats .progress .red p{
     margin: 0rem;
 }
 
+.project-status .edepartment{
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    
+}
+
+.edepartment h2{
+    font-weight: 800;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
 
 
+.chart2{
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+}
 
-
+.chatlable{
+    display: grid;
+}
 
 
 
