@@ -346,6 +346,11 @@ main .stats .progress .red p {
   box-shadow: none;
 }
 
+.dgraph {
+  width: 15rem;
+  height: 15rem;
+}
+
 .project-status .chart {
   display: flex;
   justify-content: flex-start;
